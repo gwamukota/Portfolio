@@ -17,7 +17,7 @@ This project is a personal portfolio website showcasing my work, skills, and res
 ## Technology Stack
 
 - **Frontend:** HTML, CSS, JavaScript
-- **Deployment:** Vercel
+- **Deployment:** Netlify and Vercel
 
 ## Hosting Link
 

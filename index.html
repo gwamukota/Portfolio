@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header with Navigation -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>GW</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#landing-page" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Landing Page Section -->
+  <section id="landing-page">
+    <div class="landing-page-content">
+      <h2>Crafting Digital Experiences</h2>
+      <p>A creative journey in design and development</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <img src="images/profile-pic.png" alt="Profile Picture" class="profile-pic">
+      <h2>About Me</h2>
+      <p>
+        Welcome to my portfolio! I'm Gift Wamukota, a dedicated professional passionate about creating innovative digital solutions. 
+      With a background in Information and Technology, I blend technical expertise with creativity to develop projects that are both functional 
+      and visually engaging. I believe in clear communication and collaboration, always striving to bring a human touch to every project. 
+      Whether it's through writing clean, efficient code or designing user-friendly interfaces, my goal is to craft experiences that make a 
+      positive impact. Aside from that cycling and fixing cars are my hobbies.
+      Thank you for visiting, and I invite you to explore my work, learn more about my journey, and reach out if you'd like to connect.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="images/art.png" alt="Project 1" id="project-icons"> 
+          <h3>ArtVerse</h3>
+          <p>ArtVerse E-commerce Gallery is a web application designed to showcase and sell art pieces online. 
+              The project is developed using modern web technologies and is deployed at artverse-ecommerce-gallery.vercel.app.</p>
+          <a href="https://github.com/gwamukota/artverse-ecommerce-gallery.git" class="btn">View on GitHub</a>
+        </div>
+        <div class="project-card">
+          <img src="images/simple-weather.png" alt="Project 2" id="project-icons">
+          <h3>Simple WeatherApp</h3>
+          <p>WeatherApp is a simple web-based application that displays weather information to users. This project is designed
+              to be a minimal starting point for building more advanced weather apps with real-time data integration.</p>
+          <a href="https://github.com/gwamukota/WeatherApp.git" class="btn">View on GitHub</a>
+        </div>
+        <div class="project-card">
+          <img src="images/weather.png" alt="Project 3" id="project-icons">
+          <h3>Weather Data Collection System</h3>
+          <p>The project is a Weather Data Collection System that integrates real-time weather data retrieval with AWS S3 storage. 
+              It demonstrates core DevOps principles by combining external API integration (OpenWeather API),cloud storage. 
+          </p>
+          <a href="https://github.com/gwamukota/Weather-dashboard-python-aws.git" class="btn">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+<section id="resume">
+  <div class="container">
+    <h2>My Resume</h2>
+    <p>
+      Want to know more about my professional journey? Click the button below to download my resume.
+    </p>
+    <a href="assets/Gift Wamukota Resume .pdf" class="btn" download>Download Resume</a>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>If you'd like to work together or have any questions, please drop me a message.</p>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Gift Wamukota. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- EmailJS SDK  NB: Experimenting with this library -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+ 
+  <!-- Initialize EmailJS -->
+    <script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "UCSeYqLJ4_0cqnVHk",
+      });
+   })();
+  </script>
+  <script src="index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

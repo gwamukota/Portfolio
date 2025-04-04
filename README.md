@@ -18,3 +18,8 @@ This project is a personal portfolio website showcasing my work, skills, and res
 
 - **Frontend:** HTML, CSS, JavaScript
 - **Deployment:** Vercel
+
+## Hosting Link
+
+- https://gift-wamukota-porfolio.netlify.app/
+- https://gift-wamukota-porfolio.vercel.app/

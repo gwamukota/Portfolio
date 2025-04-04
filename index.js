@@ -1,5 +1,5 @@
-function submit() {
-  var params = {
+function sendEmail() {
+  var templateParams = {
     name: document.getElementById("name").value,
     email: document.getElementById("email").value,
     message: document.getElementById("message").value,
@@ -8,7 +8,7 @@ function submit() {
   const serviceID = "service_rjtbn9q";
   const templateID = "template_03yyrzq";
 
-    emailjs.send(serviceID, templateID, params)
+  emailjs.send(serviceID, templateID, templateParams)
     .then(res=>{
         document.getElementById("name").value = "";
         document.getElementById("email").value = "";

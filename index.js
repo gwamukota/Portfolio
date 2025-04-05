@@ -20,3 +20,14 @@ function sendEmail() {
     .catch(err=>console.log(err));
 
 }
+function acceptCookies() {
+  document.getElementById("cookieBanner").style.display = "none";
+  document.cookie = "cookies_accepted=true; max-age=" + 60 * 60 * 24 * 30 + "; path=/";
+}
+
+window.onload = function () {
+  if (!document.cookie.includes("cookies_accepted=true")) {
+    document.getElementById("cookieBanner").style.display = "block";
+  }
+};
+

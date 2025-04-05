@@ -234,6 +234,33 @@ section p {
 #contact button:hover {
   background: #e6c200;
 }
+/* Cookie policy */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #1c1c1c;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  z-index: 9999;
+  font-size: 14px;
+}
+
+.cookie-banner a {
+  color: #00bfff;
+  text-decoration: underline;
+}
+
+.cookie-banner button {
+  background-color: #00bfff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
 
 /* Footer */
 footer {

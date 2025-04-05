@@ -3,7 +3,7 @@ Portfolio Website
 
 ## Overview
 
-This project is a personal portfolio website showcasing my work, skills, and resume. It is built using HTML, CSS, JavaScript 
+This project is a personal portfolio website showcasing my work, skills, and resume. It is built using HTML, CSS, and JavaScript 
 
 ## Features
 
@@ -23,3 +23,10 @@ This project is a personal portfolio website showcasing my work, skills, and res
 
 - https://gift-wamukota-porfolio.netlify.app/
 - https://gift-wamukota-porfolio.vercel.app/
+
+## Future Enhancements
+- Carousel implementation for a testimonials section
+- Revamp the projects section to add a slider and card pop-up
+- Add hamburger menu and add responsiveness for all screen types
+- Update color scheme
+  

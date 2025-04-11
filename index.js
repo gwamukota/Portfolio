@@ -20,14 +20,32 @@ function sendEmail() {
     .catch(err=>console.log(err));
 
 }
+// Cookie Consent Banner
 function acceptCookies() {
-  document.getElementById("cookieBanner").style.display = "none";
-  document.cookie = "cookies_accepted=true; max-age=" + 60 * 60 * 24 * 30 + "; path=/";
+  localStorage.setItem('cookieConsent', 'accepted');
+  document.getElementById('cookie-banner').style.display = 'none';
 }
 
-window.onload = function () {
-  if (!document.cookie.includes("cookies_accepted=true")) {
-    document.getElementById("cookieBanner").style.display = "block";
+function openPreferences() {
+  document.getElementById('cookie-preferences').classList.remove('hidden');
+}
+
+function savePreferences() {
+  const preferences = {
+    analytics: document.getElementById('analytics').checked,
+    marketing: document.getElementById('marketing').checked,
+  };
+  localStorage.setItem('cookiePreferences', JSON.stringify(preferences));
+  document.getElementById('cookie-banner').style.display = 'none';
+  document.getElementById('cookie-preferences').classList.add('hidden');
+}
+
+// On load, check for existing consent
+window.addEventListener('load', () => {
+  const consent = localStorage.getItem('cookieConsent');
+  if (!consent) {
+    document.getElementById('cookie-banner').style.display = 'block';
   }
-};
+});
+
 
